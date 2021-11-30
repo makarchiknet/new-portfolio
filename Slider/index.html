@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Vertical Slider</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="sidebar" draggable="true">
+      <div class="sidebar-item" style="background: linear-gradient(229.99deg, #11b7e9 -26%, #016b8b 145%);">
+        <h1>Hydrangea</h1>
+        <p>Purity</p>
+      </div>
+      <div class="sidebar-item" style="background: linear-gradient(220.16deg, #FFE101 -8%, #F39102 138%);">
+        <h1>Snowdrop</h1>
+        <p>Beauty</p>
+      </div>
+      <div class="sidebar-item" style="background: linear-gradient(221.87deg, #8308EA 1%, #5305AF 128%);">
+        <h1>Сrocus</h1>
+        <p>Life</p>
+      </div>
+      <div class="sidebar-item" style="background: linear-gradient(215.32deg, #F90306 -1%, #9E0706 124%);">
+        <h1>Poppy</h1>
+        <p>Love</p>
+      </div>
+    </div>
+    <div class="main-slide" draggable="true">
+      <div style="
+            background-image: url('https://images.unsplash.com/photo-1625204941196-17add9472d8f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2102&q=80');
+          "></div>
+      <div style="
+            background-image: url('https://images.unsplash.com/photo-1490918686724-6b23c27c03d1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2167&q=80');
+          "></div>
+      <div style="
+            background-image: url('https://images.unsplash.com/photo-1622952605876-b0bdf8b6bcb9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2175&q=80');
+          "></div>
+      <div style="
+            background-image: url('https://images.unsplash.com/photo-1567009154079-30300b4df3ad?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2133&q=80');
+          "></div>
+    </div>
+    <div class="controls">
+      <button class="down-button control ">
+        <i class="fas fa-arrow-down"></i>
+      </button>
+      <button class="up-button control ">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+      <button class="prev-button control invisible">
+        <i class="fas fa-arrow-down"></i>
+      </button>
+      <button class="next-button control invisible">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    </div>
+    <button class="change-direction vertical">
+      Change Direction
+    </button>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
