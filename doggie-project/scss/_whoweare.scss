@@ -1,0 +1,112 @@
+// !!--------------------
+.who-we-are {
+   &__container {
+      position: relative;
+      &::before,
+      &::after {
+         z-index: 1;
+         content: "";
+         display: block;
+         position: absolute;
+      }
+      &::before {
+         width: 100%;
+         min-height: 50%;
+         background: url(../img/who_we_are/Stylize_Circles.svg) right bottom / contain no-repeat;
+         top: -109px;
+         right: -76px;
+         @media (max-width: 767px) {
+            min-height: 40%;
+            top: -90px;
+            right: -70px;
+         }
+         @media (max-width: 510px) {
+            min-height: 35%;
+            top: -90px;
+            right: -60px;
+         }
+      }
+      &::after {
+         min-width: 100%;
+         min-height: 75%;
+         background: url(../img/who_we_are/Blob_whoweare.png) left bottom / contain no-repeat;
+         bottom: -100px;
+         left: 10px;
+
+         @media (max-width: 510px) {
+            min-height: 65%;
+            left: -10px;
+         }
+      }
+   }
+   &__body {
+      background-color: $bg-blue;
+      margin-top: -80px;
+      border-radius: 40px;
+      border: 1px solid transparent;
+      padding: 100px 87px 0px 87px;
+      position: relative;
+
+      @media (max-width: 978px) {
+         padding: 100px 67px 0px 67px;
+      }
+      @media (max-width: 767px) {
+         padding: 60px 40px 0px 40px;
+         border-radius: 25px;
+      }
+      @media (max-width: 510px) {
+         padding: 40px 25px 0px 25px;
+      }
+   }
+
+   &__header {
+      position: relative;
+      margin: 0px 0px 36px 0px;
+      z-index: 2;
+   }
+
+   &__title {
+      margin-bottom: 36px;
+      max-width: 585px;
+      z-index: 2;
+   }
+
+   &__text {
+      position: relative;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.15px;
+      color: $color-light-grey;
+      z-index: 2;
+      margin-bottom: 53px;
+   }
+
+   &__img {
+      position: relative;
+      z-index: 5;
+      width: 100%;
+      padding: 0px 0px 50% 0px;
+      border-radius: 40px;
+      overflow: hidden;
+      box-shadow: 0px 8px 16px rgba(38, 38, 38, 0.24), 0px 16px 24px rgba(38, 38, 38, 0.2);
+      margin-bottom: -120px;
+      @media (max-width: 767px) {
+         padding: 0px 0px 60% 0px;
+         margin-bottom: -20%;
+         border-radius: 25px;
+      }
+      @media (max-width: 510px) {
+         padding: 0px 0px 70% 0px;
+         margin-bottom: -30%;
+      }
+   }
+   &__img img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+   }
+}

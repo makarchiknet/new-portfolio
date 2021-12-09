@@ -1,0 +1,324 @@
+.appointment {
+   background: url(../img/appointment/appointment_bg.jpg) center/cover no-repeat;
+
+   &__container {
+      position: relative;
+
+      &::before,
+      &::after {
+         content: "";
+         position: absolute;
+         width: 100%;
+      }
+      &::before {
+         height: 95%;
+         background: url(../img/appointment/Blob2.svg) 0 0 / contain no-repeat;
+         top: -5px;
+         left: -195px;
+         z-index: 0;
+         @media (max-width: 992px) {
+            top: 350px;
+            left: -70px;
+         }
+         @media (max-width: 767px) {
+            display: none;
+         }
+      }
+      &::after {
+         height: 58%;
+         background: url(../img/appointment/Stylize-Circles.svg) 0 0 / contain no-repeat;
+         top: 240px;
+         left: -98px;
+         z-index: 1;
+         @media (max-width: 992px) {
+            height: 50%;
+            top: 530px;
+            left: 20px;
+         }
+         @media (max-width: 767px) {
+            display: none;
+         }
+      }
+   }
+
+   &__body {
+      padding: 130px 0px 210px 0px;
+      display: flex;
+      flex-wrap: wrap-reverse;
+      justify-content: space-between;
+      @media (max-width: 992px) {
+         justify-content: center;
+      }
+      @media (max-width: 767px) {
+         // padding: 70px 0px 150px 0px;
+         padding: 70px 0px 70px 0px;
+      }
+   }
+
+   &__form {
+      position: relative;
+      z-index: 10;
+   }
+
+   &__description {
+      position: relative;
+      z-index: 10;
+      margin-top: -20px;
+      margin-left: 30px;
+      text-align: center;
+      color: $color-white;
+      align-self: center;
+      font-weight: 900;
+      max-width: 325px;
+      @media (max-width: 992px) {
+         margin: 0px 0px 70px 0px;
+      }
+   }
+   &__description > *:not(:last-child) {
+      margin-bottom: 44px;
+   }
+   &__title {
+      font-size: 30px;
+      line-height: 1.2;
+   }
+
+   &__number {
+      font-size: 96px;
+      font-size: calc(70px + 26 * (100vw / 1020));
+      line-height: 1;
+      @media (max-width: 767px) {
+         font-size: calc(70px + (26 + 26 * 0.7) * ((100vw - 320px) / 1020));
+      }
+   }
+
+   &__text {
+      font-size: 19px;
+      line-height: 1.37;
+   }
+}
+
+.form {
+   max-width: 585px;
+   background-color: $bg-blue;
+   border-radius: 40px;
+   padding: 76px 57px;
+   box-shadow: 0px 8px 16px rgba(38, 38, 38, 0.24), 0px 16px 24px rgba(38, 38, 38, 0.2);
+   display: flex;
+   flex-direction: column;
+   color: $color-white;
+   font-size: 16px;
+   line-height: 1.5;
+   letter-spacing: 0.15px;
+   @media (max-width: 992px) {
+      max-width: 80%;
+   }
+   @media (max-width: 767px) {
+      border-radius: 25px;
+      max-width: 90%;
+      padding: 40px 30px;
+   }
+   @media (max-width: 650px) {
+      max-width: 100%;
+   }
+   @media (max-width: 500px) {
+      border-radius: 25px;
+      max-width: 90%;
+      padding: 30px 20px;
+   }
+
+   &__title {
+      font-weight: 900;
+      font-size: 36px;
+      line-height: 1.17;
+      text-align: center;
+      color: $color-white;
+      margin-bottom: 47px;
+   }
+   &__body {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 25px;
+   }
+   &__body > div:not(:last-child) {
+      margin-bottom: 22px;
+   }
+
+   &__group {
+      position: relative;
+      flex: 0 1 calc(50% - 11.22px);
+      border: 2px solid #ffffff;
+      border-radius: 10px;
+      &_width {
+         flex: 1 1 100%;
+      }
+      @media (max-width: 767px) {
+         flex: 1 1 100%;
+      }
+   }
+
+   &__input,
+   &__textarea {
+      width: 100%;
+      background-color: transparent;
+      padding: 15px 24px;
+      outline: none;
+      color: $color-white;
+      transition: all 0.3s ease-in;
+      font-family: "Roboto";
+      font-size: 16px;
+      letter-spacing: 0.15px;
+   }
+   &__input:focus {
+      box-shadow: 0px 8px 16px rgba(38, 38, 38, 0.24), 0px 16px 24px rgba(38, 38, 38, 0.2);
+   }
+   &__input:focus ~ &__label,
+   &__input:not(:placeholder-shown) ~ &__label,
+   &__textarea:focus ~ &__label,
+   &__textarea:not(:placeholder-shown) ~ &__label {
+      top: 7px;
+      font-size: 10px;
+      font-weight: 400;
+      color: $btn-color;
+   }
+   &__label {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 24px;
+      color: $color-white;
+      transition: all 0.3s ease-in;
+      &_top {
+         top: 30px;
+         @media (max-width: 767px) {
+            padding: 30px 20px 20px 0px;
+         }
+      }
+   }
+   &__textarea {
+      resize: none;
+      height: 170px;
+   }
+   &__button {
+      align-self: end;
+      padding: 12px 30px;
+      cursor: pointer;
+      outline: none;
+      @media (max-width: 767px) {
+         align-self: center;
+      }
+   }
+   &__button:hover,
+   &__button:focus {
+      background-color: $color-salmon-dark;
+      box-shadow: 0px 8px 16px rgba(38, 38, 38, 0.24), 0px 16px 24px rgba(38, 38, 38, 0.2);
+   }
+}
+
+.select {
+   position: relative;
+
+   &[data-state="active"] {
+      .select__title {
+         &::before {
+            transform: translate(-3px, -50%) rotate(-45deg);
+         }
+
+         &::after {
+            transform: translate(3px, -50%) rotate(45deg);
+         }
+      }
+
+      .select__content {
+         opacity: 1;
+      }
+
+      .select__label + .select__input + .select__label {
+         max-height: 40px;
+         border-top-width: 1px;
+      }
+   }
+   &__title {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      padding: 8px 24px;
+      cursor: pointer;
+
+      &::before,
+      &::after {
+         content: "";
+         position: absolute;
+         top: 50%;
+         right: 16px;
+         display: block;
+         width: 10px;
+         height: 2px;
+         transition: all 0.3s ease-out;
+         background-color: $color-white;
+         transform: translate(-3px, -50%) rotate(45deg);
+      }
+      &::after {
+         transform: translate(3px, -50%) rotate(-45deg);
+      }
+
+      &:hover {
+         box-shadow: 0px 8px 16px rgba(38, 38, 38, 0.24), 0px 16px 24px rgba(38, 38, 38, 0.2);
+
+         &::before,
+         &::after {
+            background-color: $btn-color;
+         }
+      }
+   }
+
+   &__content {
+      position: absolute;
+      top: 40px;
+      left: 3px;
+      display: flex;
+      flex-direction: column;
+      width: calc(100% - 6px);
+      background-color: $bg-blue;
+      border: 1px solid #c7ccd1;
+      border-top: none;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      transition: all 0.3s ease-out;
+      opacity: 0;
+      z-index: 8;
+   }
+   &__input {
+      display: none;
+
+      &:checked + label {
+         background-color: #dedede;
+         color: $bg-blue;
+      }
+      &:disabled + label {
+         opacity: 0.4;
+         pointer-events: none;
+      }
+   }
+   &__label {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 40px;
+      max-height: 0;
+      padding: 0 16px;
+      transition: all 0.2s ease-out;
+      cursor: pointer;
+      overflow: hidden;
+
+      & + input + & {
+         border-top: 0 solid #c7ccd160;
+      }
+
+      &:hover {
+         background-color: #dedede !important;
+         color: $bg-blue;
+      }
+   }
+}

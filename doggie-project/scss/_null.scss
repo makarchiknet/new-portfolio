@@ -1,0 +1,51 @@
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   box-sizing: border-box;
+}
+li {
+   list-style: none;
+}
+a,
+a:visited {
+   text-decoration: none;
+}
+a:hover {
+   text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: inherit;
+   font-size: inherit;
+}
+img {
+   vertical-align: top;
+}
+html,
+body {
+   height: 100%;
+}
+html {
+   font-size: 16px; /* по умолчанию */
+}
+
+// !----------------------------
+// input:-webkit-autofill {
+//    border-radius: 10px;
+//    -webkit-box-shadow: 0 0 0 50px $bg-blue inset; /* Change the color to your own background color */
+//    -webkit-text-fill-color: $color-white;
+// }
+
+// input:-webkit-autofill:focus {
+//    border-radius: 10px;
+//    -webkit-box-shadow: 0 0 0 50px $bg-blue inset; /*your box-shadow*/
+//    -webkit-text-fill-color: $color-white;
+// }

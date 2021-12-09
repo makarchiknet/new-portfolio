@@ -1,0 +1,218 @@
+.footer {
+   padding: 120px 0px 0px 0px;
+   // padding: 160px 0px 0px 0px;
+   // &__block {
+   //    display: flex;
+   //    margin-bottom: 98px;
+   //    padding-right: 17px;
+   // }
+
+   // &__social {
+   //    margin: 0px 124px 0px 0px;
+   // }
+
+   // &__explore {
+   //    margin-top: 17px;
+   //    // flex: 0 1 auto;
+   // }
+
+   // &__contact {
+   //    // justify-self: flex-end;
+   //    margin-left: auto;
+   //    margin-top: 17px;
+   //    padding: 0px 0px 0px 20px;
+   //    max-width: 235px;
+   // }
+}
+
+// .social {
+//    display: flex;
+//    flex-direction: column;
+//    justify-content: start;
+//    align-items: start;
+
+//    &__logo {
+//       display: block;
+//       margin-bottom: 23px;
+//    }
+
+//    &__text {
+//       font-size: 14px;
+//       line-height: 1.57;
+//       letter-spacing: 0.15px;
+//       color: $color-grey;
+//       max-width: 235px;
+//       margin-bottom: 40px;
+//    }
+
+//    &__icons {
+//       display: flex;
+//       margin: 0px 0px 0px 10px;
+//    }
+//    &__icons a {
+//       display: flex;
+//       align-items: center;
+//    }
+//    &__icons a:not(:last-child) {
+//       margin-right: 23px;
+//    }
+
+//    &__link {
+//    }
+// }
+
+// .explore {
+//    &__title {
+//       color: $color-grey;
+//       font-size: 14px;
+//       letter-spacing: 0.15px;
+//       font-weight: 700;
+//       text-transform: uppercase;
+//       margin: 0px 0px 30px 0px;
+//    }
+
+//    &__menu {
+//    }
+// }
+// .menu-explore {
+//    &__list {
+//       max-height: 150px;
+//       display: flex;
+//       flex-direction: column;
+//       flex-wrap: wrap;
+//    }
+//    &__list li {
+//       margin: 0px 135px 13px 0px;
+//    }
+
+//    &__link {
+//       color: $color-grey;
+//       font-weight: 700;
+//       font-size: 14px;
+//       line-height: 1.57;
+//       letter-spacing: 0.15px;
+//       transition: all 0.3s ease-in;
+//    }
+//    &__link:hover {
+//       color: $btn-color;
+//    }
+// }
+
+// .contact-footer {
+//    color: $color-grey;
+//    font-size: 14px;
+
+//    letter-spacing: 0.15px;
+
+//    &__title {
+//       font-weight: 700;
+//       text-transform: uppercase;
+//       margin: 0px 0px 28px 0px;
+//    }
+//    &__body {
+//       line-height: 1.57;
+//    }
+//    &__body img {
+//       padding: 4px 20px 0px 0px;
+//       align-self: start;
+//    }
+//    &__body > div:not(:last-child) {
+//       margin: 0px 0px 16px 0px;
+//    }
+//    &__address {
+//       display: flex;
+//    }
+
+//    &__phone {
+//       display: flex;
+//    }
+
+//    &__e-mail {
+//       display: flex;
+//    }
+
+//    &__boarding {
+//       display: flex;
+//    }
+// }
+
+.company {
+   background-color: $bg-blue;
+   padding: 20px 0px;
+   @media (max-width: 400px) {
+      padding: 10px 0px;
+   }
+   &__wrap {
+      max-width: 1110px;
+      margin: 0 auto;
+      padding: 0px 15px 0px 15px;
+      display: flex;
+      flex-wrap: wrap-reverse;
+      row-gap: 15px;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      line-height: 1.5;
+      letter-spacing: 0.15px;
+      color: $color-white;
+      @media (max-width: 744px) {
+         justify-content: center;
+      }
+   }
+
+   &__text {
+      padding-right: 30px;
+      @media (max-width: 740px) {
+         padding-right: 0px;
+      }
+      @media (max-width: 400px) {
+         display: none;
+      }
+   }
+
+   &__body {
+      flex: 0 0 auto;
+      display: flex;
+      align-items: center;
+      @media (max-width: 400px) {
+         flex-direction: column;
+         align-items: center;
+      }
+   }
+
+   &__years {
+      margin-right: 10px;
+      @media (max-width: 400px) {
+         margin-right: 0px;
+      }
+   }
+   &__links {
+      color: $color-white;
+   }
+
+   &__links a {
+      font-weight: 700;
+      color: $color-white;
+      position: relative;
+      transition: all 0.3s ease-in;
+   }
+   &__links a:hover {
+      color: $btn-color;
+      font-weight: 700;
+      position: relative;
+   }
+   &__links a:not(:last-child) {
+      padding-right: 10px;
+      margin-right: 5px;
+   }
+   &__links a:not(:last-child)::after {
+      content: "";
+      display: block;
+      background-color: #fff;
+      width: 1px;
+      height: 12px;
+      position: absolute;
+      top: 0;
+      right: 0;
+   }
+}
