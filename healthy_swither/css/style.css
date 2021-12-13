@@ -1815,25 +1815,6 @@ body.ie ._ibg img {
   max-height: 240px;
 }
 
-.item-social__block_insta .simplebar-scrollbar {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: 4px;
-  height: 92px !important;
-  background-color: white;
-  opacity: 0.5;
-  border-radius: 3px;
-}
-
-.item-social__block_insta .simplebar-scrollbar::before {
-  background-color: #303030;
-}
-
-.item-social__block_insta .simplebar-scrollbar.simplebar-hover::before,
-.item-social__block_insta .simplebar-scrollbar.simplebar-visible::before {
-  background-color: #303030;
-}
-
 .item-social__article {
   max-height: 240px;
   padding-right: 15px;
